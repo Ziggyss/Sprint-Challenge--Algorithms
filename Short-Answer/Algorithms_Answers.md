@@ -28,4 +28,13 @@ For the range of floors n = 0 to n = n:
     Return f.
 
 
+If, however, the aim is to reduce the number of dropped eggs OR broken eggs, I would take a different approach and use a binary search which has a run time of O(logn).
+
+For this I would start at the middle floor, drop an egg and see if it breaks.
+
+If so, I would go to the middle of the floors below and try again. If not, I would go to the middle of the floors above and try again. 
+
+I would repeat this process until I found floor f - the floor that breaks an egg and is one above a floor that doesn't.
+
+
 
