@@ -2,8 +2,8 @@
 
 ## Exercise I
 
-a) This one has a running time of O(n^3) because of the loop. 
-Line 1 is O(1), line 2 is O(n^3) because it loops n * n * n times, and line 3 is O(1).
+a) This one has a running time of O(n) because of the loop. 
+Line 1 is O(1), line 2 looks like O(n^3) but because a increases each time by the value of n*n it makes this line O(n), and line 3 is O(1).
 
 
 b) This code has a running time of O(nlogn) because it has a nested loop which runs at O(logn) because j is doubled each time - similar to halving n each time. Each line would be O(1), O(n), O(1), a nested O(logn), O(1) and O(1). Simplified, this makes O(n) * O(logn) which is O(nlogn).
